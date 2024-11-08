@@ -140,7 +140,7 @@ const Feeds = () => {
               添加
             </Button>
             <div className="font-normal text-sm">
-              共{feedData?.items.length || 0}个订阅
+              共 {feedData?.items.length || 0} 个订阅
             </div>
           </div>
 
@@ -190,7 +190,7 @@ const Feeds = () => {
             {currentMpInfo ? (
               <div className="flex h-5 items-center space-x-4 text-small">
                 <div className="font-light">
-                  最后更新时间:
+                  最后更新时间：
                   {dayjs(currentMpInfo.syncTime * 1e3).format(
                     'YYYY-MM-DD HH:mm:ss',
                   )}
